@@ -1,0 +1,107 @@
+// Insert at the end of linked list
+#include<iostream>
+using namespace std;
+class Node{
+    public:
+    int data;
+    Node *next;
+
+    // Constructor
+    Node(int x)
+    {
+        data=x;
+        next=NULL;
+    }
+};
+int main()
+{
+Node* Head;
+Node*Tail;
+Tail=Head=NULL;
+
+
+    int arr[]={2,4,6,8,10};
+    //Insert at end
+for(int i=0;i<=4;i++)
+{
+    // Linked List does not exist
+    if(Head==NULL)
+    {
+        Head=new Node(arr[i]);
+        Tail=Head;
+    }
+    
+    // Linked List exists
+    else{
+        Tail->next=new Node(arr[i]);
+        Tail=Tail->next;
+    }
+    
+}
+// printing Linked list
+Node *temp;
+temp=Head;
+while(temp)
+
+{
+    cout<<temp->data<<" ";
+    temp=temp->next;
+}
+}
+
+// Do previous method by yourself in which i was traversing whole linked list
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Node{
+//     public:
+//     int data;
+//    Node *next=NULL;
+
+//     // Constructor
+//     Node(int value)
+//     {
+//       data=value;
+//       next=NULL;
+//     }
+// };
+// int main()
+// {
+
+//     Node*Head;
+//     Head=NULL;
+
+//     // Linked list does not exist
+//     int arr[]={90,10,20,50,60};
+//     for(int i=0;i<=4;i++)
+//     {
+
+//         if(Head==NULL)
+//         {
+//             Head=new Node(arr[i]);
+//         }
+//         else{
+//             Node *Tail=Head;
+//             while(Tail->next!=NULL)
+//             {
+//                 Tail=Tail->next;
+//             }
+
+//             Node *temp;
+//             temp=new Node(arr[i]);
+//             Tail->next=temp;
+//         }
+//     }
+
+//     // printing the linked list
+//     Node *temp=Head;
+//     while(temp!=NULL)
+//     {
+//         cout<<temp->data<<" ";
+//         temp=temp->next;
+
+//     }
+
+// }
