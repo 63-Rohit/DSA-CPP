@@ -41,6 +41,8 @@ for(int i=0;i<=4;i++)
 // printing Linked list
 Node *temp;
 temp=Head;
+//que) why we create extra temp when we can traverse with Head also? or why we does not move with Head pointer
+// ans)because it has one way
 while(temp)
 
 {
@@ -92,6 +94,7 @@ while(temp)
 //             Node *temp;
 //             temp=new Node(arr[i]);
 //             Tail->next=temp;
+// //but time complexity of this code is very high as i know that i want to insert the node at end so why not i take a pointer which points to end.
 //         }
 //     }
 
