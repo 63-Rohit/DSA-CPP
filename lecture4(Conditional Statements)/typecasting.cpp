@@ -1,0 +1,9 @@
+#include<iostream>
+using namespace std;
+main()
+{
+    int a=10;
+    char c='b';
+    a=c;
+    cout<<a;
+}
