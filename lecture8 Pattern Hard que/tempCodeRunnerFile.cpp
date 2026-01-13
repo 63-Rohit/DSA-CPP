@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // #include<iostream>
 // using namespace std;
 // int main()
@@ -262,6 +263,8 @@
 //   while(i<=n);
 // }
 =======
+=======
+>>>>>>> bf17da043a40b7071558f01fa6ec012ba906802f
 #include<iostream>
 using namespace std;
 int main()
@@ -282,4 +285,7 @@ int main()
         cout<<endl;
     }
 }
+<<<<<<< HEAD
+>>>>>>> bf17da043a40b7071558f01fa6ec012ba906802f
+=======
 >>>>>>> bf17da043a40b7071558f01fa6ec012ba906802f
