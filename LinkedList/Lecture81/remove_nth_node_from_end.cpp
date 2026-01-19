@@ -1,4 +1,16 @@
+// Example: Remove N-th Node from the End
+// Input
 
+// Linked List:
+// 21 → 12 → 56 → 10 
+
+// N = 2 (remove 2nd node from the end)
+
+// Final Linked List
+// 21 → 12 →  10 
+
+
+// Node Deleted => 56
 
 #include <iostream>
 using namespace std;
